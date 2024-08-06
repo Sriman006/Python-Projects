@@ -1,19 +1,19 @@
-import pandas as pd 
-import numpy as np
+# import pandas as pd 
+# import numpy as np
 
-from datetime import datetime
+# from datetime import datetime
 
-class CSV:
-    CSV_FILE = "finance_data.csv"
+# class CSV:
+#     CSV_FILE = "finance_data.csv"
     
-    @classmethod
-    def initialize_csv(cls):
-        try:
-            pd.read_csv(cls.CSV_FILE)
-        except FileNotFoundError:
-            df = pd.DataFrame(columns= [ "date", "amount","category", "description"])
-            df.to_csv(cls.CSV_FILE, index= False)
+#     @classmethod
+#     def initialize_csv(cls):
+#         try:
+#             pd.read_csv(cls.CSV_FILE)
+#         except FileNotFoundError:
+#             df = pd.DataFrame(columns= [ "date", "amount","category", "description"])
+#             df.to_csv(cls.CSV_FILE, index= False)
 
-CSV.initialize_csv()            
+# CSV.initialize_csv()            
                 
     
